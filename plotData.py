@@ -19,6 +19,7 @@ def plotScatter(x, y):
 	for i, j in zip(x, y):
 		heatmapMatrix[i][j] += 1
 	plt.imshow(heatmapMatrix)
+	plt.savefig("plot.png")
 	plt.show()
 
 
