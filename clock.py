@@ -21,7 +21,7 @@ def playSolitaire(clockFace):
     winner = False
     discards = []
     currentCard = clockFace[0].pop() 
-    while len(discards) < 52:
+    for i in range(52):
         print(clockFace)
         discards.append(currentCard)
         if len(discards) == 52:
